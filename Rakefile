@@ -55,6 +55,15 @@ namespace :testcloud do
 		API_KEY = ENV['API_KEY']
 		USER_ACCOUNT = ENV['USER_ACCOUNT']
 		DEVICE_SET = ENV['DEVICE_SET']
+
+		arguments = ["API_KEY", "USER_ACCOUNT", "DEVICE_SET"]
+
+		[API_KEY, USER_ACCOUNT, DEVICE_SET].each_with_index do |val, index|
+			if val.nil?
+				raise "#{arguments[index]} cannot be nil, please input a value."
+			end
+		end
+
 		LOCALE = "en_US"
 	end
 
