@@ -48,7 +48,7 @@ namespace :testcloud do
 	desc "Build Test Solution"
 	task :build_test_solution do
 		puts "Restoring Test Nuget Packages"
-		sh "nuget restore src/MobileApp/XamarinCRM.UITest/packages.config -PackagesDirectory src/MobileApp/packages//packages"
+		sh "nuget restore src/MobileApp/XamarinCRM.UITest/packages.config -PackagesDirectory src/MobileApp/packages/"
 		puts "Building Test Solution"
 		sh "xbuild src/MobileApp/XamarinCRM.UITest/XamarinCRM.UITest.csproj"
 
