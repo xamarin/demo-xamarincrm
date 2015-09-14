@@ -1,21 +1,10 @@
-# task :default => build_app:all_build_steps
-
-task :ios_dlls do
-	sh "ls src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/"
-	puts
-end
-
-task :android_dlls do
-	sh "ls src/MobileApp/XamarinCRM.Android/bin/Release/"
-	puts
-end
-
 task :default => ['build:ios', 'build:android']
 
 namespace :build do
 	desc "Build iOS App"
 	task :ios do
 		sh "nuget restore src/MobileApp/XamarinCRM.iOS/packages.config -PackagesDirectory src/MobileApp/packages/"
+		sh "nuget restore src/MobileApp/XamarinCRM.UITest/packages.config -PackagesDirectory src/MobileApp/packages/"
 		puts "iOS nugets restored"
 		puts
 		puts "Building XamarinCRM.iOS"
