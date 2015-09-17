@@ -16,7 +16,7 @@ Xamarin CRM is a demo app whose imagined purpose is to serve the mobile workforc
 
 ##Xamarin.Forms app (Xamarin CRM)
 
-####[Setup Instructions](https://github.com/xamarin/demo-xamarincrm/wiki/Setup-Xamarin-CRM-app)
+####[Setup Instructions](wiki/Setup-Xamarin-CRM-app)
 
 ####[Install the app NOW without building from source code (coming soon)](wiki/Install-the-app-NOW-without-building-from-source-code)
 
